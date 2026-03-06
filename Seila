@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang='pt-BR'>
+
+<head>
+    <title>Bem vindos a Alemanha!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class='container'>
+        <div class='place'>
+    <h1>Bem vindos a Alemanha!</h1>
+    </div>
+        <h2>Conhecendo sua capital!</h2>
+<p>
+    Berlim, capital vibrante e maior cidade da Alemanha, é um centro cosmopolita com profunda carga histórica da Segunda
+    Guerra Mundial e da Guerra Fria. Oferece mais de 365 museus, intensa vida cultural, áreas verdes extensas (como o
+    Tiergarten) e marcos icônicos como o Portão de Brandemburgo, o Muro de Berlim (East Side Gallery) e o Memorial do
+    Holocausto.
+</p>
+<center>
+<p>
+    <img src="https://simplesmenteberlim.com/wp-content/uploads/2012/08/PortaoDeBrandenburgo21.jpg">
+</p>
+</center>
+    <p>
+        Berlim é mais antiga do que a própria Alemanha unificada, tendo sido fundada em 1237. Foi a capital da Prússia por
+        mais de 600 anos antes da criação do Império Alemão em 1871.
+    </p>
+
+<div class='place'>
+<h2>Veja Pontos Turísticos Icônicos</h2>
+</div>
+<p>
+    A cidade locais que são Patrimônios Mundiais da UNESCO como: a Ilha dos Museus, os Palácios e Parques de Potsdam e
+    Berlim, e os Conjuntos Habitacionais Modernistas. O Muro de Berlim, que dividiu a cidade de 1961 a 1989, ainda é
+    visível em locais como o East Side Gallery, a maior galeria de arte a céu aberto do mundo.
+</p>
+<p>
+    Veja alguns dos pontos Turísticos na guia
+    <a href=https://everything-everywhere.com/unesco-world-heritage-sites-in-germany/ target='_blank'>
+        Everything Everywhere!
+    </a>
+</p>
+</div>
+
+</body>
+
+</html>
+--------------------------------------------------------------------------
+
+.container {
+margin: 0 auto;
+width: 960px;
+background-color: rgb(240, 148, 135);
+}
+
+img{
+    display: block;
+    margin:20px auto;
+}
+
+.place {
+border-color: #CCC #999 #999 #CCC;
+border: 1px solid #CCC;
+margin-bottom: 20px;
+padding: 2px;
+background-color: rgb(151, 86, 236);
+}
+
+ body {
+font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana,
+sans-serif;
+line-height: 2
+}
