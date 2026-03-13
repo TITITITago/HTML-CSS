@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang='pt-BR'>
+
+<header>
+    <title>Bem vindos a Alemanha!</title>
+    <link rel="stylesheet" href="style.css">
+</header>
+
+<body>
+
+    <div class='container'>
+<h1>Bem vindos a Alemanha!</h1>
+        <main>
+
+            <article>
+                
+
+                <h2>Conhecendo sua capital!</h2>
+                <p>
+                    Berlim, capital vibrante e maior cidade da Alemanha, é um centro cosmopolita com profunda carga
+                    histórica da Segunda
+                    Guerra Mundial e da Guerra Fria. Oferece mais de 365 museus, intensa vida cultural, áreas verdes
+                    extensas (como o
+                    Tiergarten) e marcos icônicos como o Portão de Brandemburgo, o Muro de Berlim (East Side Gallery) e
+                    o Memorial do
+                    Holocausto.
+                </p>
+
+
+                <p>
+                    Berlim é mais antiga do que a própria Alemanha unificada, tendo sido fundada em 1237. Foi a capital
+                    da Prússia por
+                    mais de 600 anos antes da criação do Império Alemão em 1871.
+                </p>
+            </article>
+
+            <article>
+                <h2>Veja Pontos Turísticos Icônicos</h2>
+
+                <p>A Alemanha é um país que equilibra perfeitamente o peso da história com uma modernidade vibrante e
+                    paisagens naturais que parecem saídas de livros.
+                </p>
+            </article>
+            
+            <article>
+                <h3>Castelo de Neuschwanstein (Baviera)</h3>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Schloss_Neuschwanstein_2013.jpg">
+                <p>O "Castelo de Conto de Fadas" por excelência. Construído pelo rei Ludwig II no século XIX, ele serviu de inspiração para o castelo da Cinderela de Walt Disney. Localizado no topo de uma colina nos Alpes Bávaros, a vista das torres surgindo entre a neblina ou a neve é simplesmente inesquecível.</p>
+                <a href=https://everything-everywhere.com/unesco-world-heritage-sites-in-germany/ target='_blank'>
+                    Confira!
+                </a>
+            </article>
+
+            <article>
+                <h3>Portão de Brandemburgo (Berlim)</h3>
+                <img src="https://simplesmenteberlim.com/wp-content/uploads/2012/08/PortaoDeBrandenburgo21.jpg">
+                <p>Mais do que um monumento neoclássico, o Portão de Brandemburgo é o maior símbolo da história alemã. Durante a Guerra Fria, ele ficou isolado entre o Leste e</p>
+                <a href=https://everything-everywhere.com/unesco-world-heritage-sites-in-germany/ target='_blank'>
+                    Confira!
+                </a>
+            </article>
+
+            <article>
+                <h3>Catedral de Colônia (Colônia)</h3>
+                <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC4w7oAbHCbpLAXIQuM7oaiIpk3cPA68-DcQ&s>
+                <p>Esta obra-prima da arquitetura gótica é um dos monumentos mais visitados do país. Suas torres gêmeas dominam o horizonte da cidade e levaram mais de 600 anos para serem concluídas. O interior abriga o Relicário dos Três Reis Magos, uma joia da arte medieval.</p>
+                <a href=https://everything-everywhere.com/unesco-world-heritage-sites-in-germany/ target='_blank'>
+                    Confira!</a>
+            </article>
+            
+
+            <address>
+                <p> seila.@gmail.com</p>
+                <p> Rs-470 km172 n°1234</p>
+            </address>
+
+        </main>
+<footer>
+    teste
+</footer>
+    </div>
+
+</body>
+
+</html>
+
+
+--------------------------------
+
+.container {
+margin: 0 auto;
+width: 960px;
+
+}
+
+img{
+    display: block;
+    margin:20px auto;
+}
+
+main{
+    float: left;
+    width: 660px;
+}
+
+article{
+border-color: #CCC #999 #999 #CCC;
+border: 1px solid #e2df14;
+margin-bottom: 20px;
+padding: px;
+}
+
+article h2{
+    
+    border-bottom: 1px dashed #7E9F19;
+    margin: 0;
+ }
+
+article img{
+width: 100%;
+ }
+
+ body {
+font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana,sans-serif;
+line-height: 2;
+background-color: rgb(112, 156, 238);
+}
+ 
+footer{
+    clear: both;
+}
