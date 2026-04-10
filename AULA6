@@ -1,0 +1,375 @@
+/* --- Reset --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Layout principal --- */
+main {
+    display: flex;
+    gap: 20px;
+}
+
+/* --- Corpo da página --- */
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+/* --- Container --- */
+.container {
+    width: 100%;
+    max-width: 900px;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* --- Conteúdo e Aside --- */
+.conteudo {
+    width: 70%;
+}
+
+aside {
+    width: 30%;
+    padding: 15px;
+    border-left: 5px solid #d32f2f;
+    background: #f8f9fa;
+    border-radius: 10px;
+}
+
+aside ul {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+aside li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+/* --- Títulos --- */
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    border-bottom: 4px solid #d32f2f;
+    padding-bottom: 10px;
+}
+
+h2 {
+    color: #d32f2f;
+    border-left: 6px solid #000;
+    padding-left: 15px;
+    margin: 35px 0 20px;
+}
+
+h3 {
+    color: #2c3e50;
+    margin: 30px 0 15px;
+}
+
+/* --- Artigos --- */
+article {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #eee;
+}
+
+p {
+    margin-bottom: 15px;
+    color: #555;
+    font-size: 1.1rem;
+}
+
+/* --- Imagens --- */
+img {
+    width: 100%;
+    border-radius: 12px;
+    margin: 25px 0;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+/* --- Links --- */
+article a {
+    display: inline-block;
+    background: #2c3e50;
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+article a:hover {
+    background: #d32f2f;
+}
+
+
+/* --- Rodapé --- */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    color: #888;
+}
+
+/* --- Responsivo --- */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    .conteudo,
+    aside {
+        width: 100%;
+    }
+}
+-------------------------------------------------
+TABELA
+<!doctype html>
+<html lang='pt-BR'>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Bem-vindos à Alemanha!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class='container'>
+    <header>
+      <h1>Bem-vindos à Alemanha!</h1>
+    </header>
+
+    <main>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Cidade / Estado</th>
+            <th>Ponto Turístico</th>
+            <th>Início da Construção</th>
+            <th>População (Cidade)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Füssen (Baviera)</td>
+            <td>Castelo de Neuschwanstein</td>
+            <td>5 de setembro de 1869</td>
+            <td>~ 15.000</td>
+          </tr>
+          <tr>
+            <td>Berlim</td>
+            <td>Portão de Brandemburgo</td>
+            <td>1788 - 1791</td>
+            <td>~ 3,8 milhões</td>
+          </tr>
+          <tr>
+            <td>Colônia</td>
+            <td>Catedral de Colônia</td>
+            <td>15 de agosto de 1248</td>
+            <td>~ 1,1 milhão</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </div>
+
+</body>
+
+</html>
+
+----------------------------------------------------
+FORMULÁRIO
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Contato</title>
+    <style>
+        body { font-family: sans-serif; background-color: #f4f4f9; padding: 20px; }
+        .container { max-width: 400px; background: white; padding: 20px; border-radius: 8px; shadow: 0 2px 10px rgba(0,0,0,0.1); margin: auto; }
+        h2 { color: #333; text-align: center; }
+        .group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input, select, textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+        button { width: 100%; padding: 10px; background-color: #28a745; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; }
+        button:hover { background-color: #218838; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Fale Conosco</h2>
+    <form action="/enviar-dados" method="POST">
+        
+        <div class="group">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+        </div>
+
+        <div class="group">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="email@exemplo.com" required>
+        </div>
+
+        <div class="group">
+            <label for="assunto">Assunto:</label>
+            <select id="assunto" name="assunto">
+                <option value="suporte">Suporte Técnico</option>
+                <option value="vendas">Vendas</option>
+                <option value="feedback">Sugestão/Feedback</option>
+            </select>
+        </div>
+
+        <div class="group">
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Como podemos ajudar?"></textarea>
+        </div>
+
+        <button type="submit">Enviar Mensagem</button>
+
+    </form>
+</div>
+
+</body>
+</html>
+
+-----------------------------------
+HTML
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bem-vindos à Alemanha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Bem-vindos à Alemanha!</h1>
+
+    <main>
+
+        <!-- CONTEÚDO PRINCIPAL -->
+        <div class="conteudo">
+
+            <article>
+                <h2>Conhecendo sua capital!</h2>
+
+                <p>
+                    Berlim, capital vibrante e maior cidade da Alemanha, é um centro cosmopolita com profunda carga
+                    histórica da Segunda Guerra Mundial e da Guerra Fria.
+                </p>
+                <p>
+                <p>
+                    A Alemanha combina história, tecnologia e natureza de forma única.
+                    O país é conhecido por sua eficiência industrial, sendo uma das maiores economias do mundo e líder em engenharia automotiva.
+                    Além disso, possui castelos medievais, florestas densas e cidades modernas extremamente organizadas.
+                </p>
+                </p>
+
+                <p>
+                    Berlim é mais antiga do que a própria Alemanha unificada, tendo sido fundada em 1237.
+                </p>
+            </article>
+
+            <article>
+                <h2>Veja Pontos Turísticos Icônicos</h2>
+                <p>
+                    A Alemanha combina história, cultura e modernidade de forma única.
+                </p>
+            </article>
+
+            <article>
+                <h3>Castelo de Neuschwanstein</h3>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Schloss_Neuschwanstein_2013.jpg" alt="Castelo">
+                <p><p>
+    O Castelo de Neuschwanstein foi construído no século XIX pelo rei Ludwig II da Baviera e nunca foi totalmente finalizado.
+    Ele recebe mais de 1 milhão de visitantes por ano e inspirou o castelo da Disney.
+    Localizado nos Alpes Alemães, oferece vistas impressionantes e é cercado por trilhas naturais e lagos.
+</p></p>
+                <a href="https://everything-everywhere.com/unesco-world-heritage-sites-in-germany/" target="_blank">
+                    Confira
+                </a>
+            </article>
+
+            <article>
+                <h3>Portão de Brandemburgo</h3>
+                <img src="https://simplesmenteberlim.com/wp-content/uploads/2012/08/PortaoDeBrandenburgo21.jpg" alt="Portão">
+                <p><p>
+    O Portão de Brandemburgo é um dos símbolos mais importantes da Alemanha.
+    Durante a Guerra Fria, ele ficou inacessível por estar na fronteira entre o Leste e o Oeste de Berlim.
+    Após a queda do Muro de Berlim em 1989, tornou-se símbolo da reunificação alemã e da paz na Europa.
+</p></p>
+                <a href="https://everything-everywhere.com/unesco-world-heritage-sites-in-germany/" target="_blank">
+                    Confira
+                </a>
+            </article>
+
+            <article>
+                <h3>Catedral de Colônia</h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC4w7oAbHCbpLAXIQuM7oaiIpk3cPA68-DcQ&s" alt="Catedral">
+                <p><p>
+    A Catedral de Colônia é uma das maiores igrejas góticas do mundo e levou mais de 600 anos para ser concluída.
+    Ela sobreviveu quase intacta aos bombardeios da Segunda Guerra Mundial, mesmo com a cidade devastada.
+    Seu interior abriga o Santuário dos Três Reis Magos, considerado uma das relíquias mais importantes do cristianismo na Europa.
+</p></p>
+                <a href="https://everything-everywhere.com/unesco-world-heritage-sites-in-germany/" target="_blank">
+                    Confira
+                </a>
+            </article>
+
+            <footer>
+                <hr>
+                <address>
+                    Escrito por <a href="mailto:contato@turismoalemanha.com">Guia de Turismo Alemanha</a><br>
+                    Rua das Flores, 123, Berlim, Alemanha<br>
+                    Telefone: +49 30 1234-5678
+                </address>
+            </footer>
+
+        </div>
+
+        <!-- SIDEBAR -->
+        <aside>
+            <h2>Alemanha</h2>
+
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Berlin_Brandenburg_Gate_night.jpg" alt="Alemanha">
+
+            <ul>
+                <li><strong>Capital:</strong> Berlim</li>
+                <li><strong>População:</strong> ~83 milhões</li>
+                <li><strong>Idioma:</strong> Alemão</li>
+                <li><strong>Moeda:</strong> Euro (€)</li>
+            </ul>
+
+            <p>
+                A Alemanha é um dos países mais influentes da Europa, com grande importância histórica, cultural e econômica.
+            </p>
+        </aside>
+
+    </main>
+
+</div>
+
+</body>
+</html>
